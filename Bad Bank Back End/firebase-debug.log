@@ -1,0 +1,36 @@
+[debug] [2022-08-24T06:15:16.681Z] ----------------------------------------------------------------------
+[debug] [2022-08-24T06:15:16.682Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bickf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:channel:deploy preview_name
+[debug] [2022-08-24T06:15:16.683Z] CLI Version:   11.8.0
+[debug] [2022-08-24T06:15:16.683Z] Platform:      win32
+[debug] [2022-08-24T06:15:16.683Z] Node Version:  v18.7.0
+[debug] [2022-08-24T06:15:16.684Z] Time:          Wed Aug 24 2022 02:15:16 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-08-24T06:15:16.684Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-24T06:15:16.734Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-24T06:15:16.735Z] > authorizing via signed-in user (bickfordbft@gmail.com)
+[debug] [2022-08-24T06:15:16.735Z] [iam] checking project capstone-6b796 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-24T06:15:16.737Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-6b796:testIamPermissions [none]
+[debug] [2022-08-24T06:15:16.737Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-6b796:testIamPermissions x-goog-quota-user=projects/capstone-6b796
+[debug] [2022-08-24T06:15:16.737Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-6b796:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T06:15:16.996Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-6b796:testIamPermissions 200
+[debug] [2022-08-24T06:15:16.996Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-6b796:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T06:15:16.997Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/capstone-6b796 [none]
+[debug] [2022-08-24T06:15:17.303Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/capstone-6b796 200
+[debug] [2022-08-24T06:15:17.303Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/capstone-6b796 {"projectId":"capstone-6b796","projectNumber":"841424984558","displayName":"Capstone","name":"projects/capstone-6b796","resources":{"hostingSite":"capstone-6b796","realtimeDatabaseInstance":"capstone-6b796-default-rtdb","storageBucket":"capstone-6b796.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_d857c1fa-ab87-47af-a1a1-ccb7e3e48578"}
+[info] 
+[info] === Deploying to 'capstone-6b796'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-24T06:15:17.306Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/capstone-6b796 [none]
+[debug] [2022-08-24T06:15:17.558Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/capstone-6b796 200
+[debug] [2022-08-24T06:15:17.559Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/capstone-6b796 {"projectId":"capstone-6b796","projectNumber":"841424984558","displayName":"Capstone","name":"projects/capstone-6b796","resources":{"hostingSite":"capstone-6b796","realtimeDatabaseInstance":"capstone-6b796-default-rtdb","storageBucket":"capstone-6b796.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_d857c1fa-ab87-47af-a1a1-ccb7e3e48578"}
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/capstone-6b796/overview
+[debug] [2022-08-24T06:15:17.760Z] TypeError: Cannot read properties of undefined (reading 'deploys')
+    at deploy (C:\Users\bickf\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:83:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Command.actionFn (C:\Users\bickf\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\hosting-channel-deploy.js:86:25)
+[error] 
+[error] Error: An unexpected error has occurred.
