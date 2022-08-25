@@ -16,12 +16,19 @@ function Login(){
 
 function LoginMsg(props){
   return(<>
-    <h5>You Have Successfully Logged In!</h5>
-    <button type="submit" 
+  
+  
+    <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Logged In</h4>
+  <p>You can now navigate around and utlize the website</p>
+  
+  <p class="mb-0"></p>
+  <button type="submit" 
       className="btn btn-light" 
       onClick={() => props.setShow(true)}>
-        Authenticate again
+        Sign Out
     </button>
+</div>
   </>);
 }
 
@@ -37,6 +44,7 @@ function LoginForm(props){
             const data = JSON.parse(text);
             props.setStatus('');
             props.setShow(false);
+            
             console.log('JSON:', data);
         } catch(err) {
             props.setStatus(text)
@@ -44,7 +52,18 @@ function LoginForm(props){
         }
     });
   }
-
+function fire(){
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    // Signed in
+    var user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+  });
+}
 
   return (<>
 
@@ -63,7 +82,7 @@ function LoginForm(props){
       onChange={e => setPassword(e.currentTarget.value)}/><br/>
 
     <button type="submit" className="btn btn-light" onClick={handle}>Login</button>
-    <button type="submit" className="googlelogin" onClick={handle}>Login With Google</button>
+    <button type="submit" className="googlelogin" onClick={fire}>Login With Google</button>
     
   </>);
   

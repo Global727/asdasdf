@@ -38,7 +38,7 @@ function DepositForm(props){
     .then(text => {
         try {
             const data = JSON.parse(text);
-            props.setStatus(JSON.stringify(data.value));
+            props.setStatus("Your new balance is "+(JSON.stringify(data.value.balance)+"."));
             props.setShow(false);
             console.log('JSON:', data);
         } catch(err) {

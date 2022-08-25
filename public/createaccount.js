@@ -16,10 +16,17 @@ function CreateAccount(){
 
 function CreateMsg(props){
   return(<>
-    <h5>Success</h5>
-    <button type="submit" 
+   <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Logged In</h4>
+  <p>You can now navigate around and utlize the website</p>
+  
+  <p class="mb-10"> </p>
+  <button type="submit" 
       className="btn btn-light" 
-      onClick={() => props.setShow(true)}>Add another account</button>
+      onClick={() => props.setShow(true)}>
+        Sign Out
+    </button>
+</div>
   </>);
 }
 
