@@ -8,6 +8,7 @@
     },
   "scripts": {
     "start": "node index.js"
+    
   },
   "author": "Riley",
   "license": "",
