@@ -1,14 +1,14 @@
 {
-  "name": "littledb",
+  "name": "rile-capstone",
   "version": "1.0.0",
-  "description": "lowdb sample for 1.125",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "start": "node index.js"
   },
-  "author": "abel@mit.edu",
-  "license": "MIT",
+  "author": "Riley",
+  "license": "",
   "dependencies": {
     "cors": "^2.8.4",
     "docker": "^1.0.0",
