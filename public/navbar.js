@@ -27,8 +27,9 @@ function NavBar(){
             <a className="nav-link" href="#/CreateAccount/">Create Account</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/alldata/">AllData</a>
-          </li>          
+            <a className="nav-link" href="#/alldata/">View All Data</a>
+          </li>   
+                
         </ul>
         </div>
       </div>
