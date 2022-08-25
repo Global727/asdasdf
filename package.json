@@ -13,6 +13,8 @@
     "cors": "^2.8.4",
     "docker": "^1.0.0",
     "express": "^4.16.3",
+    "firebase": "^9.9.3",
+    "firebase-admin": "^11.0.1",
     "lowdb": "^1.0.0",
     "mongodb": "^3.7.3"
   }
