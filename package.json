@@ -10,7 +10,7 @@
     "start": "node index.js"
   },
   "author": "Riley",
-  "license": "",
+  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.4",
     "docker": "^1.0.0",
@@ -20,6 +20,16 @@
     "lowdb": "^1.0.0",
     "mongodb": "^3.7.3",
     "mongosh": "^1.5.4",
+    "nodemon": "^2.0.19",
     "serve": "^14.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Global727/asdasdf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Global727/asdasdf/issues"
+  },
+  "homepage": "https://github.com/Global727/asdasdf#readme"
 }
