@@ -1,11 +1,11 @@
 {
-  "name": "rile-capstone",
+  "name": "riley-capstone",
   "version": "1.0.0",
-  "description": "",
+  "description": "FullStack Capstone",
   "main": "index.js",
   "engines": {
     "node": "18.7.0"
-  },
+    },
   "scripts": {
     "start": "node index.js"
   },
