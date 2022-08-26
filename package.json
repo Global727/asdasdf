@@ -1,7 +1,7 @@
 {
-  "name": "rile-capstone",
+  "name": "riley-capstone",
   "version": "1.0.0",
-  "description": "",
+  "description": "FullStack Capstone",
   "main": "index.js",
   "engines": {
     "node": "18.7.0"
@@ -20,6 +20,7 @@
     "lowdb": "^1.0.0",
     "mongodb": "^3.7.3",
     "mongosh": "^1.5.4",
+    "nodemon": "^2.0.19",
     "serve": "^14.0.1"
   }
 }
