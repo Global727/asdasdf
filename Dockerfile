@@ -11,4 +11,4 @@ RUN npm install
 
 CMD ["npm", "start"]
 
-ENTRYPOINT node index.js 
+ENTRYPOINT node index.html
